@@ -5,33 +5,44 @@
   <title>CSS/HTML Workshop with Privateaser</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+  <link rel="stylesheet" href="TD2.css">
 </head>
 
 <body>
-  <div class="card mx-auto" style="width:50rem;">
-    <h4 class="card-title text-center">Invoices of Privateaser</h4>
-
-    <div class="card-body text-center" id="bar">
+  <div class="card mx-auto" style="width:40rem;">
+    <img class="card-img img-fluid" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?cs=srgb&dl=beauty-bloom-blue-67636.jpg&fm=jpg"
+      alt="card image">
+    </br>
+    <h4 class="card-title text-center"><i>Invoices of Privateaser</i></h4>
+    </br>
+    <div class="container text-center" id="bar">
       <input class="js-name text-center" type="text" placeholder="Bar name" />
       <input class="js-price-by-hour text-center" type="number" placeholder="Price by hour" />
       <input class="js-price-by-person text-center" type="number" placeholder="Price by person" />
     </div>
-    <div class="card-body text-center" id="booker">
+    </br>
+    <div class="container text-center" id="booker">
       <input class="js-name text-center" type="text" placeholder="Booker name" />
       <input class="js-time text-center" type="number" placeholder="Time in h" />
       <input class="js-persons text-center" type="number" placeholder="Persons" />
-    </br></br>
-      Deductible option <input class="js-option text-center" type="checkbox" placeholder="Deductible option" />
+      </br></br>
+      <div>
+        Deductible option <input class="js-option text-center" type="checkbox" placeholder="Deductible option" />
+      </div>
+
     </div>
-    
+
     </br>
     <button href="#" class="btn btn-primary" id="compute">Compute</button>
-
-    <div id="actors"></div>
-
   </div>
+  </br>
+
+
+  <div class="card mx-auto" style="border:none; width:40rem">
+      <div id="actors"></div>
+    </div>
+
   <script src="privateaser.js"></script>
   <script src="index.js"></script>
 </body>

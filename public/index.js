@@ -7,9 +7,9 @@
     const div = document.createElement('div');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
+<div class="card-body actor">
+          <span><b>${actor.who}</b> :</span><br>
+          <span>${actor.type} =</span>
           <span>${actor.amount}</span>
         </div>
       `;
